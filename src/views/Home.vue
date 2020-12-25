@@ -1,7 +1,6 @@
 <template>
     <div>
 
-        <navbar class="nb"/>
         <slideshow />
         <br>
         <h1 class="title_categories">Shop by Categories</h1>
@@ -17,6 +16,7 @@
         <bestseller />
         <br>
         <newsletter />
+        <infobox />
 
     </div>
 </template>
@@ -28,6 +28,7 @@ import categoriesBox from  '../components/categoriesHome'
 import trending from '../components/trending'
 import bestseller from '../components/bestsellerproducts'
 import newsletter from '../components/newsletter'
+import infobox from '../components/info'
 
 export default {
    components: {
@@ -36,21 +37,14 @@ export default {
        categoriesBox,
        trending,
        bestseller,
-       newsletter
+       newsletter,
+       infobox
 
    } 
 }
 </script>
 
 <style>
-
-    .nb {
-        position: fixed;
-        width:100%;
-        height: 140px;
-        background-color: white;
-        z-index: 2;
-    }  
 
     .title_categories{
         padding-top: 20px;
